@@ -90,16 +90,16 @@ public class Main {
                 taskService.add(new Task(name, description, taskType, resultDate));
                 break;
             case 1:
-                taskService.add(new Task(name, description, taskType, resultDate));
+                taskService.add(new DailyTask(name, description, taskType, resultDate));
                 break;
             case 2:
-                taskService.add(new Task(name, description, taskType, resultDate));
+                taskService.add(new WeeklyTask(name, description, taskType, resultDate));
                 break;
             case 3:
-                taskService.add(new Task(name, description, taskType, resultDate));
+                taskService.add(new MonthlyTask(name, description, taskType, resultDate));
                 break;
             case 4:
-                taskService.add(new Task(name, description, taskType, resultDate));
+                taskService.add(new YearlyTask(name, description, taskType, resultDate));
                 break;
             default:
                 throw new RuntimeException("Нет такого типа задач!");
